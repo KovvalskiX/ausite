@@ -321,7 +321,7 @@ sup {
     vertical-align: top;
 }
 
-#certs {
+#certs #docs {
     display: inline-block;
 }
 
@@ -343,6 +343,12 @@ div.gallery a, div.gallery a img, div.gallery a embed {
 }
 div.gallery a img:focus, div.gallery a embed:focus{
     transform: scale(5);
+}
+
+.paperwork {
+    margin: 5px;
+    width: 45%;
+    height: 50vh;
 }
 
 @media screen and (min-width: 914px) {
