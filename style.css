@@ -328,7 +328,7 @@ sup {
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
+    display: inline-flex;
     height: 16vh;
 }
     
@@ -345,10 +345,29 @@ div.gallery a img:focus, div.gallery a embed:focus{
     transform: scale(5);
 }
 
-.paperwork {
+
+.pdfgallery {
+    display: inline-block;
     margin: 5px;
     width: 45%;
     height: 50vh;
+}
+
+.pdfgallery a {
+    display: block;
+    width: 100%;
+    border: #6492cf solid 1px;
+    padding: 10px 0;
+    text-align: center;
+}
+.pdfgallery a:hover {
+    border: #fff solid 1px;
+    color: #fff;
+}
+
+div.pdfgallery embed {
+    width: 100%;
+    height: 92%;
 }
 
 @media screen and (min-width: 914px) {
