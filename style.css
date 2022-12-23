@@ -6,6 +6,7 @@ body {
     url('assets/bg.jpg');
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -389,6 +390,9 @@ div.pdfgallery embed {
     }
     div.gallery a img:focus {
         transform: none;
+    }
+    .pdfgallery {
+        height: 25vh;
     }
 }
 
