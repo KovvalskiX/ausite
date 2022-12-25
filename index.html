@@ -187,9 +187,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   $('details').click(function (event) {
-    $('#loading').fadeIn(250, void(0));
+    var open = $(this).attr("open");
     $('details').not(this).removeAttr("open");
-    setTimeout(removeLoader, 500);
+    if (typeof open === 'undefined' || open === false) {
+      $('#loading').fadeIn(250, void(0));
+      setTimeout(removeLoader, 500);
+    }
   });
   // call updateQuote once when page loads
   updateQuote();
