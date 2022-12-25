@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=1400, initial-sclae=1.0, user-scalable=yes">
 <title>Портфолио</title>
 <link rel="icon" href="assets/favicon.png">
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -16,7 +17,10 @@
 </head>
 
 <body>
-
+<div class="bg"></div>
+<div id="loading">
+  <img id="loading-image" src="assets/loading.gif" alt="Loading..." />
+</div>
 <h1>Портфолио</h1>
 <table>
 <tr>
@@ -33,7 +37,7 @@
 
 <div id="entra-space" style="margin-top: 70px;"></div>
 <div>
-<details id="certs">
+<details id="spoiler">
   <summary><b>Сертификаты и грамоты</b></summary>
   <div class="gallery"><a href="assets/certs/0.jpeg"><img src="assets/certs/0.jpeg" tabindex="1" width=400 height=600></a></div> 
   <div class="gallery"><a href="assets/certs/1.jpeg"><img src="assets/certs/1.jpeg" tabindex="1" width=400 height=600></a></div> 
@@ -72,53 +76,78 @@
   <div class="gallery"><a href="assets/certs/9.jpeg"><img src="assets/certs/9.jpeg" tabindex="1" width=400 height=600></a></div>
 </details><br>
 <div id="entra-space" style="margin-top: 70px;"></div>
-<details id="docs">
+<details id="spoiler">
   <summary><b>Документы и наработки</b></summary>
-  <div class="pdfgallery"><embed src="assets/docs/0.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/0.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/1.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/1.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/10.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/10.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/11.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/11.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/12.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/12.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/13.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/13.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/14.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/14.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/15.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/15.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/16.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/16.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/17.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/17.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/18.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/18.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/19.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/19.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/2.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/2.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/20.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/20.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/3.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/3.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/4.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/4.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/5.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/5.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/6.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/6.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/7.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/7.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/8.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/8.pdf">Открыть</a></div> 
-  <div class="pdfgallery"><embed src="assets/docs/9.pdf" class="paperwork" type="application/pdf"><a href="assets/docs/9.pdf">Открыть</a></div> 
-    
+  <div id="entra-space" style="margin-top: 70px;"></div>
+  <div class="pdfgallery"><iframe src="assets/docs/0.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/0.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/1.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/1.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/10.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/10.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/11.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/11.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/12.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/12.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/13.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/13.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/14.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/14.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/15.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/15.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/16.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/16.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/17.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/17.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/18.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/18.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/19.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/19.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/2.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/2.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/20.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/20.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/21.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/21.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/3.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/3.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/4.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/4.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/5.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/5.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/6.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/6.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/7.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/7.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/8.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/8.html">Открыть</a></div> 
+  <div class="pdfgallery"><iframe src="assets/docs/9.html" class="paperwork" type="application/pdf"></iframe><a href="assets/docs/9.html">Открыть</a></div>
 </details><br>
 <div id="entra-space" style="margin-top: 70px;"></div>
-<b>Мои достижения:</b><br>
-<ul>
-<li><a href="#teacher_award">Best teacher award</a><br></li>
-<li><a href="#teacher_award">Достижение 2</a><br></li>
-<li><a href="#teacher_award">Достижение 3</a><br></li>
-<li><a href="#teacher_award">Достижение 4</a><br></li>
-<li><a href="#teacher_award">Достижение 5</a><br></li>
-</ul>
-</div>
-
-<h2><a id="teacher_award" href="#teacher_award">Best teacher award</a></h2>
-<p><em></em></p>
-<img alt="certificate" src="assets/cert.jpg">
-</div>
-
-<h2><a id="id_here" href="#id_here">Достижение 2</a></h2>
-<p><em>Текст</em></p>
-<div>Ссылка: <a href="#link_here">link_here</a><br>
-<img alt="icon" src="assets/icon.png" class="inline-icon"> <a href="#link_here">link_here</a>
-</div>
-
+<details class="spoiler">
+  <summary><b>Счастливые моменты</b></summary>
+  <div class="gallery"><a href="assets/photos/0.jpeg"><img src="assets/photos/0.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/1.jpeg"><img src="assets/photos/1.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/10.jpeg"><img src="assets/photos/10.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/11.jpeg"><img src="assets/photos/11.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/12.jpeg"><img src="assets/photos/12.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/13.jpeg"><img src="assets/photos/13.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/14.jpeg"><img src="assets/photos/14.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/15.jpeg"><img src="assets/photos/15.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/16.jpeg"><img src="assets/photos/16.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/17.jpeg"><img src="assets/photos/17.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/18.jpeg"><img src="assets/photos/18.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/19.jpeg"><img src="assets/photos/19.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/2.jpeg"><img src="assets/photos/2.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/20.jpeg"><img src="assets/photos/20.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/21.jpeg"><img src="assets/photos/21.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/22.jpeg"><img src="assets/photos/22.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/23.jpeg"><img src="assets/photos/23.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/24.jpeg"><img src="assets/photos/24.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/25.jpeg"><img src="assets/photos/25.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/26.jpeg"><img src="assets/photos/26.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/27.jpeg"><img src="assets/photos/27.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/28.jpeg"><img src="assets/photos/28.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/29.jpeg"><img src="assets/photos/29.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/3.jpeg"><img src="assets/photos/3.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/30.jpeg"><img src="assets/photos/30.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/31.jpeg"><img src="assets/photos/31.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/32.jpeg"><img src="assets/photos/32.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/33.jpeg"><img src="assets/photos/33.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/34.jpeg"><img src="assets/photos/34.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/35.jpeg"><img src="assets/photos/35.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/36.jpeg"><img src="assets/photos/36.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/37.jpeg"><img src="assets/photos/37.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/38.jpeg"><img src="assets/photos/38.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/39.jpeg"><img src="assets/photos/39.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/4.jpeg"><img src="assets/photos/4.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/40.jpeg"><img src="assets/photos/40.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/41.jpeg"><img src="assets/photos/41.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/5.jpeg"><img src="assets/photos/5.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/6.jpeg"><img src="assets/photos/6.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/7.jpeg"><img src="assets/photos/7.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/8.jpeg"><img src="assets/photos/8.jpeg" tabindex="1" width=400 height=600></a></div> 
+  <div class="gallery"><a href="assets/photos/9.jpeg"><img src="assets/photos/9.jpeg" tabindex="1" width=400 height=600></a></div> 
+</details>
 
 <div class="footer" style="margin-top: 100px;">
 <hr>
@@ -143,14 +172,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function removeLoader(){
+    $( "#loading" ).fadeOut(500, void(0));//function() {
+      // fadeOut complete. Remove the loading div
+      //$( "#loading" ).remove(); //makes page more lightweight 
+  //});
+  }
+
   if (window.matchMedia("(orientation: landscape)").matches) {
     $(function(){
       $(".gallery > a").removeAttr( 'href' );
       $(".gallery").last().css("margin-bottom", "16vh")
     });
   }
+
+  $('details').click(function (event) {
+    $('#loading').fadeIn(250, void(0));
+    $('details').not(this).removeAttr("open");
+    setTimeout(removeLoader, 500);
+  });
   // call updateQuote once when page loads
   updateQuote();
+  $(window).ready(function(){
+    setTimeout(removeLoader, 1000);
+    $(".bg").prependTo("html");
+  });
 });
 </script>
 </body>
